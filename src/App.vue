@@ -97,7 +97,7 @@ export default defineComponent({
     },
     extractHourlyForecast(forecastData: any[]): any[] {
       return forecastData
-          .filter((forecast, index) => index % 5 === 0)
+          .filter((forecast, index) => index % 1 === 0)
           .map(forecast => ({
             time: forecast.dt_txt,
             temperature: forecast.main.temp,
